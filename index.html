@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1590035fca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="bold">Pomodoro App</h1>
+      <section class="clock-sect">
+        <p id="task-pgph" class="clock-sect__task-pgph bold">
+          Your task will be here
+        </p>
+        <p class="clock-sect__time-pgph bold">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </p>
+        <form id="task-form" class="clock-sect__form">
+          <!-- <label for="task" class="bold">Add task</label> -->
+          <input type="text" name="task" placeholder="add a new task" />
+          <button id="add-task-btn" type="submit">Add</button>
+        </form>
+        <p class="error-pgph">This task already exists</p>
+      </section>
+      <section class="tasks-sect"></section>
+    </main>
+
+    <template id="task-template">
+      <article class="task">
+        <h2 class="task__title">Task title</h2>
+        <div class="flex">
+          <p class="task__status">Pending</p>
+          <button class="task__start-btn bold">Start</button>
+        </div>
+      </article>
+    </template>
+    <footer class="foot">
+      <div class="foot__copy">
+        <p class="foot__copy__pgph">
+          Creado por Genaro Ismael Bonavita en 2022 &copy;
+        </p>
+      </div>
+      <div class="foot__icons">
+        <a target="blank" href="https://instagram.com/genaro_ibc">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a target="blank" href="https://github.com/GenaroIBC">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

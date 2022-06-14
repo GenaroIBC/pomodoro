@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --error-color: #d01702;
+  --sucess-color: #17d002;
+  --neutro-color: #07b;
+  --bg-color: #343434;
+}
+
+html {
+  min-height: 95vh;
+}
+body {
+  background-color: #232323;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+input,
+button {
+  background-color: var(--bg-color);
+  font-size: 1.5rem;
+  border: none;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+input:focus {
+  background-color: var(--bg-color);
+  border: none;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+  /* background-color: #07f; */
+  background-color: #07f;
+}
+
+.clock-sect {
+  width: 60vw;
+  margin: 4rem auto;
+  padding: 1rem;
+  background-color: #f07;
+}
+
+.clock-sect__time-pgph {
+  font-size: 3rem;
+}
+
+.clock-sect__task-pgph {
+  font-size: 2.5rem;
+}
+
+/* generic classes */
+.bold {
+  font-weight: bold;
+}
+
+.task {
+  background-color: var(--error-color);
+  width: 60vw;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.completed {
+  background-color: var(--sucess-color);
+}
+
+.in-progress {
+  background-color: var(--neutro-color);
+}
+
+.error-pgph {
+  background-color: var(--error-color);
+  font-size: 1.2rem;
+  display: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* .foot {
+  position: absolute;
+  bottom: 0;
+  margin:  0 auto;
+} */
